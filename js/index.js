@@ -58,3 +58,24 @@ body.addEventListener('cut', (event) => {
 body.addEventListener('select', (event) => {
     event.target.style.fontSize = 'xx-large';
 })
+
+
+
+
+const destinationP = document.querySelector('.content-destination p');
+
+
+destinationP.addEventListener('', function(event){
+    
+})
+
+
+Array.from(document.links).forEach(link => {
+    link.addEventListener('click', function(event){
+        event.preventDefault();
+    })
+});
+
+window.addEventListener('load', function(event){
+    body.style.backgroundColor = 'blue';
+})
