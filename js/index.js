@@ -15,15 +15,21 @@ body.addEventListener('keydown', event => {
   }
 })
 
-body.addEventListener('wheel', function(e){
+body.addEventListener('wheel', function(){
   body.style.color = 'green';
 })
 
-const buttons = document.querySelectorAll('button');
-const buttonsArray = Array.from(buttons);
+const introImg = document.querySelector('.intro img');
 
-buttonsArray.forEach((item) => {
-  item.addEventListener('click', function(e){
-    e.target.style.color = 'orange';
-  })
-});
+introImg.addEventListener('click', function(){
+  introImg.style.width = '50%';
+})
+
+introImg.addEventListener('dblclick', function(){
+  introImg.style.width = '25%';
+})
+
+
+document.addEventListener('cut', function(e){
+  e.target.style.display = 'none';
+})
